@@ -1,0 +1,22 @@
+
+    /* Scrollbar styles for WebKit browsers */
+    ::-webkit-scrollbar {
+      width: 6px; /* Width of the scrollbar */
+      height: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: transparent; /* Track background (optional) */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: rgb(89, 89, 89); /* Darker color for the thumb */
+      border-radius: 10px; /* Rounded corners for the thumb */
+    }
+    
+    /* For Firefox */
+    
+    
+
+  
+  
