@@ -298,7 +298,7 @@ function Home() {
           <div className="p-8 md:p-12">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">Create Your Full Length Audiobook in Minutes</h2>
-              <p className="text-xl max-w-2xl mx-auto">Transform your ideas into captivating audiobooks with our AI-powered platform. Here's how it works:</p>
+              <p className="text-xl max-w-2xl mx-auto">Transform your ideas into captivating audiobooks with our AI-powered platform. Here&apos;s how it works:</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {howItWorks.map((step, index) => (
