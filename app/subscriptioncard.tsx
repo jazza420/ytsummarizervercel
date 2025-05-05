@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 //import Button from '../ui/Button';
 //import { useAuth } from '../../context/AuthContext';
 
-
+ 
 export default function SubscriptionCard() {
   // const { user, isAuthenticated } = useAuth();
   // const { plan, subscribeToPlan, cancelSubscription, isProcessing } = null;
@@ -102,7 +102,7 @@ export default function SubscriptionCard() {
             </div>
           ) : (
             <div className="space-y-4">
-              <p className="text-sm text-green-600 font-medium">You're currently subscribed!</p>
+              <p className="text-sm text-green-600 font-medium">You&apos;re currently subscribed!</p>
               {user.subscriptionEndsAt && (
                 <p className="text-xs text-gray-500">
                   Renews on {new Date(user.subscriptionEndsAt).toLocaleDateString()}

@@ -111,7 +111,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">Ready to get started?</h2>
               <p className="mt-4">
-                Join thousands of users who've enhanced their browsing experience
+                Join thousands of users who&apos;ve enhanced their browsing experience
               </p>
             </div>
             <Button size="lg" variant="secondary" asChild>
