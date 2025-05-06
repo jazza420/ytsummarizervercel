@@ -22,7 +22,7 @@ export default function Header() {
   
 
   useEffect(() => {
-    fetchUserData();
+    //fetchUserData();
   }, [session]);
   
 
@@ -32,7 +32,7 @@ export default function Header() {
       if (session.user) {
         if(session.user.name)
           setUserName(session.user.name);
-        fetch("/api/get-user-credits")
+        fetch("/api/get-user")
           .then((res) => res.json())
           .then((data) => {
             if (data.message) {
