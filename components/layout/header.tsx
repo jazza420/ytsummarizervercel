@@ -22,7 +22,7 @@ export default function Header() {
   
 
   useEffect(() => {
-    //fetchUserData();
+    fetchUserData();
   }, [session]);
   
 
@@ -53,7 +53,7 @@ export default function Header() {
   const navItems = [
     { title: 'Home', href: '/' },
     // { title: 'Settings', href: '/settings' },
-    { title: 'Billing', href: '/billing' },
+    { title: session?'Billing':'Pricing', href: '/billing' },
     // { title: 'Account', href: '/account' },
   ];
 
@@ -62,7 +62,12 @@ export default function Header() {
       <div className="flex h-16 items-center justify-between w-full">
         <div className="flex items-center gap-6 md:gap-10 ">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold text-2xl text-blue-600">SkipVid</span>
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="h-8 w-8"
+            />
+            <span className="font-bold text-2xl text-blue-600">VidSkip</span>
           </Link>
 
           <nav className="hidden md:flex gap-6">

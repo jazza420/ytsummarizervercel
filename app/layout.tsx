@@ -9,8 +9,8 @@ import { SessionProvider } from 'next-auth/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ExtensionPro - Enhance Your Browsing Experience',
-  description: 'The ultimate browser extension that supercharges your productivity and protects your privacy.',
+  title: 'VidSkip - AI YouTube Summarizer',
+  description: 'Easily summarize YouTube videos with AI',
 };
 
 export default function RootLayout({

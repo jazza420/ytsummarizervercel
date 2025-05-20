@@ -15,7 +15,8 @@ interface SubscriptionCardProps {
   onSubscribe: () => void;
 }
 
-export function SubscriptionCard({ onSubscribe }: SubscriptionCardProps) {
+
+export function SubscriptionCard({ onSubscribe }:  {onSubscribe:(() => void)}) {
   const benefits = [
     "All "+process.env.NEXT_PUBLIC_APPNAME+" extension features",
     "Faster response times",

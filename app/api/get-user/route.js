@@ -32,7 +32,7 @@ export async function GET(req) {
     console.log("free credits due");
     await usersCollection.updateOne(
       { email: session.user.email },
-      { $set: {freeCredits: 3, nextFreeCredits:new Date(new Date().getTime() + 1 * 24 * 60 * 60 * 1000)} },
+      { $set: {freeCredits: 5, nextFreeCredits:new Date(new Date().getTime() + 1 * 24 * 60 * 60 * 1000)} },
       //{ upsert: true }
     );
   }

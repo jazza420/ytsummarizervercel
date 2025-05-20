@@ -52,7 +52,7 @@ export async function GET(request) {
             console.log("free credits due");
             await usersCollection.updateOne(
                 { email:  userauth.email },
-                { $set: {freeCredits: 20, nextFreeCredits:new Date(new Date().getTime() + 7 * 24 * 60 * 60 * 1000)} },
+                { $set: {freeCredits: 5, nextFreeCredits:new Date(new Date().getTime() + 1 * 24 * 60 * 60 * 1000)} },
                 //{ upsert: true }
             );
         }
