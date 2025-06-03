@@ -53,7 +53,7 @@ export default function Header() {
   const navItems = [
     { title: 'Home', href: '/' },
     // { title: 'Settings', href: '/settings' },
-    { title: session?'Billing':'Pricing', href: '/billing' },
+    { title: session?'Billing':'Pricing', href: session?'/billing':'/#pricing' },
     // { title: 'Account', href: '/account' },
   ];
 

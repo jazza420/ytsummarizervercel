@@ -7,10 +7,12 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 import { SubscriptionCard } from '@/components/billing/subscription-card';
 import { FreeCard } from '@/components/billing/free-card';
 
-
 export default function Home() {
 
   const { data: session, status } = useSession(); 
+
+
+
 
   return (
     <div className="flex flex-col gap-20 items-center justify-center">
@@ -31,11 +33,11 @@ export default function Home() {
                 Get Started
               </Button>
             )}*/}
-            {session && (
+            {/* {session && (
               <Button size="lg" asChild>
                 <Link href="/billing">Dashboard</Link>
               </Button>
-            )} 
+            )}  */}
             <Button size="lg" asChild>
                 <Link href="/billing">Download for free</Link>
               </Button>
@@ -179,7 +181,7 @@ export default function Home() {
             </div>    */}
             <FreeCard onSubscribe={null}/>
             {/* {session ? <FreeCard onSubscribe={null}/> : <FreeCard onSubscribe={() => {signIn(undefined, {callbackUrl:'/billing'})}}/>} */}
-            <SubscriptionCard onSubscribe={session?()=>{window.location.href='/billing'}:() => {signIn(undefined, {callbackUrl:'/billing'})}}/> 
+            <SubscriptionCard onSubscribe={session?()=>{window.location.href='/upgrade'}:() => {signIn(undefined, {callbackUrl:'/upgrade'})}}/> 
 
           </div>
         </div>

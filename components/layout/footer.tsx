@@ -50,11 +50,13 @@ export default function Footer() {
                   Help Center
                 </Link>
               </li> */}
-              <li>
+              {/* <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
+              <li className="text-sm text-muted-foreground hover:text-foreground transition-colors">Email: info@vidskip.pro</li>
+              <li className="text-sm text-muted-foreground hover:text-foreground transition-colors">Discord: jazza3050</li>
             </ul>
           </div>
 
