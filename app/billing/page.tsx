@@ -27,7 +27,7 @@ export default function BillingPage() {
     // In a real app, this would trigger a payment flow
     //setIsSubscribed(true);
 
-    buyPlan({ plan: "price_1QE9U3GSOkYdeBqyscUXkjim" });
+    buyPlan({ plan: "" });
   };
 
   const handleCancelSubscription = () => {

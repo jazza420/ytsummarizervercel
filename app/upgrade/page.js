@@ -42,7 +42,7 @@ function Upgrade() {
               window.location.href = "/billing";
             } else {
               setUserData(data);
-              buyPlan('price_1QE9U3GSOkYdeBqyscUXkjim');
+              buyPlan('');
             }
           });
           console.log(JSON.stringify(session.user, null, 2));

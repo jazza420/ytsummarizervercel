@@ -32,7 +32,7 @@ export async function POST(req) {
       payment_method_types: ['card'],
       line_items: [
         {
-          price: planId, // Use the price ID of the subscription plan
+          price: process.env.STRIPE_PRO_PLAN_ID, // Use the price ID of the subscription plan
           quantity: 1,
           
         },
