@@ -39,7 +39,7 @@ export default function Home() {
               </Button>
             )}  */}
             <Button size="lg" asChild>
-                <Link href="/billing">Download for free</Link>
+                <Link href="https://chromewebstore.google.com/detail/lmbdkfehcbdcmeidnhapioogenchpfmj?utm_source=item-share-cb">Download for free</Link>
               </Button>
             {/* <Button size="lg" variant="outline" asChild>
               <Link href="/billing">View Pricing</Link>
