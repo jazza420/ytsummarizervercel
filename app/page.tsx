@@ -21,7 +21,7 @@ export default function Home() {
         <div className="container flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl mx-auto">
             {/* Enhance your browsing experience with VidSkip */}
-            Easily summarize youtube videos with AI
+            Easily summarize Youtube videos with AI
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
             VidSkip is a browser extension that uses AI to summarize YouTube videos, 
