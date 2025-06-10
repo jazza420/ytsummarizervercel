@@ -82,6 +82,8 @@ async function handleSubscriptionEvent(subscription) {
     return
   }   
 
+  console.log(`Subscription: ${subscription}`);
+
   const customer = await stripe.customers.retrieve(subscription.customer);
   if (customer.deleted) {
     throw new Error('Customer has been deleted');
