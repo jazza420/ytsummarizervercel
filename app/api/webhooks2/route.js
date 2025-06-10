@@ -82,7 +82,7 @@ async function handleSubscriptionEvent(subscription) {
     return
   }   
 
-  console.log(`Subscription: ${subscription}`);
+  
 
   const customer = await stripe.customers.retrieve(subscription.customer);
   if (customer.deleted) {
@@ -108,6 +108,8 @@ async function handleSubscriptionEvent(subscription) {
 async function updateUserSubscription(usersCollection, email, subscription) {
   const status = subscription.status;
   console.log(`Updating subscription: ${status} for ${email}`);
+
+  console.log("subscription: "+JSON.stringify(subscription))
 
 
   const user = await usersCollection.findOne(
