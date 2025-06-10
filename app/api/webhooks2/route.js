@@ -48,7 +48,7 @@ async function handleCheckoutSessionCompleted(session) {
   }
 
   const client = await clientPromise;
-  const db = client.db('Cluster0');
+  const db = client.db('Cluster1');
   const usersCollection = db.collection('users');
 
   // const userEmail = session.customer_email;
@@ -74,7 +74,7 @@ async function handleCheckoutSessionCompleted(session) {
 
 async function handleSubscriptionEvent(subscription) {
   const client = await clientPromise;
-  const db = client.db('Cluster0');
+  const db = client.db('Cluster1');
   const usersCollection = db.collection('users');
 
   if(subscription.status==="incomplete") {
@@ -234,8 +234,8 @@ function getCreditsForPlan(priceId, status) {
     //   return 180
 
     
-    if(priceId=="price_1QE9U3GSOkYdeBqyscUXkjim")
-      return 60;  // or use a switch statement for different price IDs
+    if(priceId==process.env.STRIPE_PRO_PLAN_ID)
+      return 2000;  // or use a switch statement for different price IDs
     // else if(priceId=="price_1Q4KXoGSOkYdeBqyJ0plwKQO")
     //   return 180
   }
