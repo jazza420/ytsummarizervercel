@@ -133,7 +133,7 @@ async function updateUserSubscription(usersCollection, email, subscription) {
   let subUpdateData = {
     subscriptionId: subscription.id,
     subscriptionStatus: status,
-    stripeCurrentPeriodEnd: new Date(subscription.current_period_end * 1000),
+    stripeCurrentPeriodEnd: new Date(subscription.items.data[0]?.current_period_end * 1000),
     cancelled: subscription.cancel_at_period_end
   };
 
