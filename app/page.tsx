@@ -11,8 +11,7 @@ export default function Home() {
 
   const { data: session, status } = useSession(); 
 
-
-
+  const browser = typeof window !== 'undefined' && window.navigator.userAgent.includes('Chrome') ? 'Chrome' : 'Edge';
 
   return (
     <div className="flex flex-col gap-20 items-center justify-center">
@@ -39,7 +38,7 @@ export default function Home() {
               </Button>
             )}  */}
             <Button size="lg" asChild>
-                <Link href="https://chromewebstore.google.com/detail/lmbdkfehcbdcmeidnhapioogenchpfmj?utm_source=item-share-cb">Download for free</Link>
+                <Link href="https://chromewebstore.google.com/detail/lmbdkfehcbdcmeidnhapioogenchpfmj?utm_source=item-share-cb">Download {browser} extension for free</Link>
               </Button>
             {/* <Button size="lg" variant="outline" asChild>
               <Link href="/billing">View Pricing</Link>
@@ -127,7 +126,7 @@ export default function Home() {
           </div>
           <div className="mt-16 w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
              <video controls>
-                <source src="/demo.mkv" type="video/mp4" />
+                <source src="/demo.mp4" type="video/mp4" />
               </video>
           </div>
         </div>

@@ -200,7 +200,7 @@ export const {
         await usersCollection.insertOne({
           email,
           credits: 0,
-          freeCredits: 8,
+          freeCredits: 5,
           nextFreeCredits: new Date(new Date().getTime() + 1 * 24 * 60 * 60 * 1000),
           createdAt: new Date(),
         });
